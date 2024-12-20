@@ -1,20 +1,20 @@
 CPP = c++ 
 
-CPPFLAGS =  -Wall -Wextra -Werror -std=c++98
+CFLAGS =  -Wall -Wextra -Werror -std=c++98
 
 NAME = phonebook
 
 SRCS = main.cpp phonebook.cpp
 
-OBJS = $(SRCS: .cpp=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	$(CPP) $(CPPFLAGS) $(OBJS) -o $(NAME)
+	$(CPP) $(CFLAGS) $(OBJS) -o $(NAME)
 
 %.o : %.cpp
-	$(CPP) $(CPPFLAGS) -c $> -o $@
+	$(CPP) $(CFLAGS) -c $< -o $@
 
 clean : 
 	rm -rf $(OBJS)

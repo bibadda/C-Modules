@@ -5,12 +5,11 @@
 # include <iostream>
 
 class PhoneBook {
-public:
+private:
 	std::string first_name;
 	std::string  last_name;
 	std::string  mickname;
-	int phone_number;
-	int secret;
+public:
 	PhoneBook(std::string f_name, std::string  l_name);
 	void	print();
 };
