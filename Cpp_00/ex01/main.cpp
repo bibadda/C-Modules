@@ -2,29 +2,21 @@
 # include <string>
 # include <iostream>
 
-void    add_contact(void)
-{
-    std::string line;
-    std::getline(std::cin, line);
-    
-
-}
-
 int main()
 {
+    PhoneBook phone;
+
     std::string line;
     while (1){
         std::cout << "ENTER YOUR CMD: ";
         std::getline(std::cin, line);
         if (line == "ADD")
         {
-            std::cout << "Your First Name: ";
-            std::getline(std::cin, line);
-            PhoneBook contact = PhoneBook(line, "badda");
-            // contact.print();
+            // add_contact();
+            phone.geter
         }
-        else if (line == "SEARCH")
-            std::cout << line << std::endl;
+        // else if (line == "SEARCH")
+        //     list_contacts();
         else if (line == "EXIT")
             exit (0);
     }
