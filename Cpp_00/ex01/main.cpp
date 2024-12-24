@@ -12,7 +12,7 @@ int main()
         std::getline(std::cin, line);
         if (line == "ADD")
         {
-            // add_contact();
+            add_contact();
             phone.geter
         }
         // else if (line == "SEARCH")
