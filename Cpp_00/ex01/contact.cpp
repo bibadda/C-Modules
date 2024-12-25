@@ -14,7 +14,7 @@ void    PhoneBook::add_contact(void)
    save_contact_info("Your Last Name: ");
    save_contact_info("Your Nickname Name: ");
 }
-// void    PhoneBook::list_contacts(void)
-// {
-//     for(int i; i < 8; i++)
-// }
+void    PhoneBook::list_contacts(void)
+{
+   
+}

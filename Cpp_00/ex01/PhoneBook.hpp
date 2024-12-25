@@ -7,9 +7,8 @@
 
 class PhoneBook {
 private:
-	contact *contact[8];
+	contact contact[8];
 public:
-	PhoneBook();
 	void	print();
 	void    save_contact_info(std::string msg);
 	void    add_contact(void);
