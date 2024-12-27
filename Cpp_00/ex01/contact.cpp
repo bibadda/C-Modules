@@ -1,20 +1,35 @@
 #include "PhoneBook.hpp"
+#include "contact.hpp"
 # include <string>
 # include <iostream>
 
-void    save_contact_info(std::string msg)
-{
-    std::string line;
-    std::cout << msg;
+void	contact::setFirstname(std::string firstname){
+	first_name = firstname;
 }
-
-void    PhoneBook::add_contact(void)
-{
-   save_contact_info("Your First Name: ");
-   save_contact_info("Your Last Name: ");
-   save_contact_info("Your Nickname Name: ");
+void	contact::setLastname(std::string lastname){
+	last_name = lastname;
 }
-void    PhoneBook::list_contacts(void)
-{
-   
+void	contact::setNickname(std::string nickname){
+	nickName = nickname;
+}
+void	contact::setPhonenum(std::string phonenum){
+	phonenumber = phonenum;
+}
+void	contact::setDarkestsecret(std::string secret){
+	darkestsecret = secret;
+}
+std::string	contact::getFirstname(){
+	return first_name;
+}
+std::string	contact::getLastname(){
+		return last_name;
+}
+std::string	contact::getNickname(){
+		return nickName;
+}
+std::string	contact::getPhonenum(){
+		return phonenumber;
+}
+std::string	contact::getDarkestsecret(){
+		return darkestsecret;
 }
