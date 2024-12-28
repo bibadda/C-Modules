@@ -5,6 +5,13 @@
 # include <string>
 # include <iostream>
 
+# define F_NAME "First name : "
+# define L_NAME "Last name : "
+# define NICK "Nickname : "
+# define TEL "Numberphone : "
+# define SEC "Darksecret: "
+
+
 class PhoneBook {
 private:
 	contact contact[8];
