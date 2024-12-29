@@ -18,6 +18,8 @@ std::string get_line(std::string msg)
     std::string input;
     std::cout << msg;
     std::cin >> input;
+    if (input.empty())
+        std::cout << "input" << std::endl;
     return input;
 }
 
@@ -29,17 +31,20 @@ void    PhoneBook::add_contact(void)
     while (i < 5)
     {
         contact_answer[i] = get_line(ask_contact_for[i]);
-        if (contact_answer[i].empty())
-        {
-            std::cout << "Empty line is invalide!" << std::endl;
-            continue;
-        }
-        if (!valid_numberphone(contact_answer[i]) && i == 3)
-        {
-            std::cout << "invalide numberphone!";
-            continue;
-        }
-        i++;
+        std::cout << contact_answer[i] << std::endl;
+        std::cout << contact_answer[i].empty() << std::endl;
+        // if (contact_answer[i].empty())
+        // if (contact_answer[i].empty())
+        // {
+        //     std::cout << "Empty line is invalide!" << std::endl;
+        //     continue;
+        // }
+        // if (!valid_numberphone(contact_answer[i]) && i == 3)
+        // {
+        //     std::cout << "invalide numberphone!";
+        //     continue;
+        // }
+        // i++;
     }
     // for (int j = 0; j < 5; j++)
     //     std::cout << line[j] << std::endl;
