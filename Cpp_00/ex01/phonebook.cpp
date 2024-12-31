@@ -31,9 +31,8 @@ void    PhoneBook::add_contact(void)
     while (i < 5)
     {
         contact_answer[i] = get_line(ask_contact_for[i]);
-        std::cout << contact_answer[i] << std::endl;
-        std::cout << contact_answer[i].empty() << std::endl;
-        // if (contact_answer[i].empty())
+        if (contact_answer[i].empty())
+            std::cout << "is empty" << std::endl;
         // if (contact_answer[i].empty())
         // {
         //     std::cout << "Empty line is invalide!" << std::endl;
@@ -44,10 +43,10 @@ void    PhoneBook::add_contact(void)
         //     std::cout << "invalide numberphone!";
         //     continue;
         // }
-        // i++;
+        i++;
     }
-    // for (int j = 0; j < 5; j++)
-    //     std::cout << line[j] << std::endl;
+    for (int j = 0; j < 5; j++)
+        std::cout << contact_answer[j] << std::endl;
 }
 
 void    PhoneBook::list_contacts(void)
